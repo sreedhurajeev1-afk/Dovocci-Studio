@@ -1,0 +1,182 @@
+/* Dovocci: standalone component styles. Every selector is scoped to #dovocci-site.
+   Breakpoints: 1024px tablet/laptop, 700px mobile. No JavaScript required. */
+#dovocci-site{--bg:#111310;--panel:#1c2019;--paper:#e9e5db;--gold:#c8b58a;--muted:#b1b3a8;--line:#ffffff26;background:var(--bg);color:var(--paper);font-family:Manrope,Arial,sans-serif;font-size:14px;line-height:1.6;isolation:isolate;width:100%;text-align:left;overflow-wrap:break-word}
+#dovocci-site *{box-sizing:border-box}
+#dovocci-site img{display:block;max-width:100%;border:0;border-radius:0;box-shadow:none}
+#dovocci-site h1,#dovocci-site h2,#dovocci-site h3,#dovocci-site p,#dovocci-site figure,#dovocci-site blockquote{margin:0;padding:0}
+#dovocci-site h1,#dovocci-site h2,#dovocci-site h3{color:var(--paper);font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;text-transform:none;line-height:1.08;letter-spacing:-1px}
+#dovocci-site h1{font-size:clamp(58px,6.4vw,96px)}
+#dovocci-site h2{font-size:clamp(40px,4.2vw,62px)}
+#dovocci-site h3{font-size:30px}
+#dovocci-site p{color:var(--muted)}
+#dovocci-site a{color:inherit;text-decoration:none;box-shadow:none}
+#dovocci-site button,#dovocci-site input,#dovocci-site label{font:inherit}
+#dovocci-site button,#dovocci-site a,#dovocci-site input{outline-offset:5px}
+#dovocci-site button,#dovocci-site a{touch-action:manipulation}
+#dovocci-site .wrap{width:90%;max-width:1440px;margin:0 auto;min-width:0}
+#dovocci-site header{position:relative;display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:100px;border-bottom:1px solid var(--line);background:transparent}
+#dovocci-site .logo{display:block;line-height:0;flex-shrink:0}
+#dovocci-site .logo img{width:280px;height:auto}
+#dovocci-site nav{display:flex;align-items:center;gap:clamp(16px,2vw,32px);position:static;background:transparent}
+#dovocci-site nav a{font-size:11px;white-space:nowrap}
+#dovocci-site nav a:hover,#dovocci-site .text-link:hover{color:var(--gold)}
+#dovocci-site .mobile-book{display:none}
+#dovocci-site .button{display:inline-flex;justify-content:center;align-items:center;gap:20px;min-height:48px;padding:16px 22px;border:1px solid var(--gold);background:var(--gold);color:var(--bg);font-family:Manrope,Arial,sans-serif;font-size:11px;font-weight:700;line-height:1.5;letter-spacing:.3px;cursor:pointer;border-radius:0}
+#dovocci-site .button:hover{background:#e4d4af;color:var(--bg)}
+#dovocci-site .button.outline{background:transparent;color:var(--paper);border-color:var(--line)}
+#dovocci-site .button.outline:hover{border-color:var(--gold);color:var(--gold)}
+#dovocci-site .eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase;line-height:1.8}
+#dovocci-site .eyebrow::before{content:"";width:26px;height:1px;flex-shrink:0;background:var(--gold)}
+#dovocci-site em{font-weight:400;color:var(--gold)}
+#dovocci-site .demo{background:var(--panel);color:var(--muted);font-size:8px;letter-spacing:.5px;text-align:center;padding:8px 15px}
+#dovocci-site .simple-hero{display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:center;padding:48px 0 55px}
+#dovocci-site .simple-copy,#dovocci-site .simple-photo{min-width:0}
+#dovocci-site .simple-copy h1{margin:25px 0}
+#dovocci-site .simple-copy p{font-size:13px;line-height:1.9;max-width:430px}
+#dovocci-site .actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin-top:30px}
+#dovocci-site .text-link{font-size:11px;border-bottom:1px solid var(--gold);padding:10px 0}
+#dovocci-site .simple-photo{position:relative;height:570px;background:#0c0d0b}
+#dovocci-site .simple-photo img{width:100%;height:100%;object-fit:contain}
+#dovocci-site .simple-photo>span{position:absolute;bottom:12px;left:10px;right:10px;text-align:center;font-size:7px;letter-spacing:1.5px;color:var(--paper)}
+#dovocci-site .ticker{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:19px 0;border-block:1px solid var(--line);font-size:9px;letter-spacing:1.5px;color:var(--muted)}
+#dovocci-site .ticker b{color:var(--gold);font-weight:400}
+#dovocci-site section{display:block;padding:70px 0;min-width:0;scroll-margin-top:25px}
+#dovocci-site .section-top{display:flex;justify-content:space-between;align-items:flex-end;gap:35px;margin-bottom:30px}
+#dovocci-site .section-top h2{margin-top:20px}
+#dovocci-site .section-top>p{font-size:12px;line-height:1.9;max-width:310px}
+#dovocci-site .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+#dovocci-site .service{display:block;min-width:0}
+#dovocci-site .imagebox{overflow:hidden;background:var(--panel)}
+#dovocci-site .service .imagebox img{width:100%;height:420px;object-fit:contain}
+#dovocci-site .service-info{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 15px;border-bottom:1px solid var(--line)}
+#dovocci-site .service-info>span{color:var(--gold)}
+#dovocci-site .service small{display:block;color:var(--gold);font-size:9px;letter-spacing:1px;margin-bottom:7px}
+#dovocci-site .service p{font-size:12px;line-height:1.9;margin-top:12px}
+#dovocci-site .specialist-services{margin-top:50px;padding-top:36px;border-top:1px solid var(--line)}
+#dovocci-site .specialist-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px;margin-top:25px}
+#dovocci-site .specialist-grid h3{font-size:29px}
+#dovocci-site .specialist-grid p{font-size:12px;line-height:1.9;margin:14px 0}
+#dovocci-site .specialist-grid .specialist-tag{color:var(--gold);font-size:11px}
+#dovocci-site .specialist-grid a{display:inline-block;color:var(--gold);font-size:11px;margin-top:12px;padding:8px 0}
+#dovocci-site .portfolio{background:var(--panel)}
+#dovocci-site .no-js-note{font-size:12px;line-height:1.8;margin-bottom:22px}
+#dovocci-site .css-carousel{--card-width:330px;--duration:260s;min-width:0}
+#dovocci-site .reviews-carousel{--card-width:350px;--duration:45s}
+#dovocci-site .motion-toggle{appearance:auto;display:inline-block;width:18px;height:18px;margin:0 8px 18px 0;vertical-align:middle;accent-color:var(--gold);cursor:pointer}
+#dovocci-site .motion-label{display:inline;color:var(--paper);font-size:12px;letter-spacing:0;cursor:pointer}
+#dovocci-site .carousel-window{overflow:hidden;width:100%;padding-bottom:6px}
+#dovocci-site .motion-track{display:flex;width:max-content;animation:dovocci-scroll var(--duration) linear infinite}
+#dovocci-site .motion-group{display:flex;flex-wrap:nowrap;width:max-content;gap:22px;padding:0 22px 16px 0}
+#dovocci-site .motion-group .work,#dovocci-site .motion-group .review-card{flex:0 0 var(--card-width);width:var(--card-width);max-width:var(--card-width);min-width:0}
+#dovocci-site .work img{width:100%;height:430px;object-fit:contain}
+#dovocci-site .caption{font-size:12px;margin-top:16px;color:var(--paper)}
+#dovocci-site .caption span{display:block;color:var(--muted);font-size:8px;letter-spacing:1px;margin-top:8px}
+#dovocci-site .css-carousel:hover .motion-track,#dovocci-site .css-carousel:focus-within .motion-track,#dovocci-site .motion-toggle:checked~.carousel-window .motion-track{animation-play-state:paused}
+#dovocci-site .motion-toggle:checked~.carousel-window{overflow-x:auto;scrollbar-width:thin}
+#dovocci-site .motion-toggle:checked~.carousel-window .motion-track{animation:none;transform:none}
+#dovocci-site .studio{display:grid;grid-template-columns:1.2fr 1fr;gap:7%;align-items:start}
+#dovocci-site .studio>*{min-width:0}
+#dovocci-site .studio h2{margin-top:20px}
+#dovocci-site .studio p{font-size:12px;line-height:1.9;margin:25px 0}
+#dovocci-site .studio-enlarge{display:block;position:relative;background:var(--panel)}
+#dovocci-site .studio-enlarge img{width:100%;height:400px;object-fit:contain}
+#dovocci-site .studio-enlarge>span{position:absolute;bottom:12px;right:12px;background:#111c;padding:9px 12px;font-size:9px;color:var(--paper)}
+#dovocci-site .studio-thumbnails{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:12px}
+#dovocci-site .studio-thumbnails a{display:block;padding:3px;border:1px solid var(--line);background:var(--panel)}
+#dovocci-site .studio-thumbnails a:hover{border-color:var(--gold)}
+#dovocci-site .studio-thumbnails img{width:100%;height:72px;object-fit:contain}
+#dovocci-site .studio-image-caption{color:var(--gold);font-size:10px;margin-top:12px}
+#dovocci-site .features{display:grid;grid-template-columns:1fr 1fr;gap:0 25px;margin-bottom:28px}
+#dovocci-site .features div{font-size:11px;padding:17px 0;border-bottom:1px solid var(--line)}
+#dovocci-site .features span{color:var(--gold);margin-right:8px}
+#dovocci-site .form-note{font-size:10px;color:var(--muted);line-height:1.8;overflow-wrap:anywhere}
+#dovocci-site .reviews-section{border-top:1px solid var(--line)}
+#dovocci-site .review-card{display:flex;flex-direction:column;min-height:340px;background:var(--panel);border:1px solid var(--line);padding:28px}
+#dovocci-site .review-stars{color:var(--gold);font-size:15px;letter-spacing:3px}
+#dovocci-site .review-card blockquote{flex:1;color:var(--paper);font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;line-height:1.4;margin:22px 0}
+#dovocci-site .review-author{display:flex;gap:12px;align-items:center}
+#dovocci-site .review-avatar{display:grid;place-items:center;flex-shrink:0;width:38px;height:38px;border-radius:50%;background:#363b2e;color:var(--gold)}
+#dovocci-site .review-author strong{font-size:11px;font-weight:500;color:var(--paper)}
+#dovocci-site .review-author small{display:block;font-size:9px;color:var(--muted);margin-top:5px}
+#dovocci-site .review-card>a{font-size:10px;color:var(--gold);margin-top:23px}
+#dovocci-site .review-note{font-size:10px;line-height:1.8;margin-top:14px;max-width:620px}
+#dovocci-site .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px}
+#dovocci-site .steps>div{border-top:1px solid var(--line);padding-top:20px}
+#dovocci-site .number{color:var(--gold);font-size:11px}
+#dovocci-site .steps h3{font-size:26px;margin:16px 0}
+#dovocci-site .steps p{font-size:12px;line-height:1.8}
+#dovocci-site .inquiry{background:#e6e0d2;color:var(--bg)}
+#dovocci-site .inquiry h2,#dovocci-site .inquiry h3{color:var(--bg)}
+#dovocci-site .inquiry em,#dovocci-site .inquiry .eyebrow{color:#75633e}
+#dovocci-site .inquiry p,#dovocci-site .inquiry .form-note{color:#55594e}
+#dovocci-site .inquiry p{font-size:12px;line-height:1.9;margin:25px 0}
+#dovocci-site .inquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%}
+#dovocci-site .inquiry-grid>*{min-width:0}
+#dovocci-site .inquiry .button{width:100%;background:#22251f;color:var(--paper);border-color:#22251f;margin:12px 0}
+#dovocci-site .email-booking h3{font-size:38px}
+#dovocci-site .inquiry p.form-note{font-size:10px;line-height:1.8;margin:14px 0}
+#dovocci-site footer{padding:50px 0 90px}
+#dovocci-site .footer-top{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-bottom:35px}
+#dovocci-site .footer-top .logo img{width:280px}
+#dovocci-site .footer-top p{font-size:11px}
+#dovocci-site .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px;font-size:10px;color:var(--muted)}
+#dovocci-site .float{position:fixed;bottom:max(18px,env(safe-area-inset-bottom));right:max(18px,env(safe-area-inset-right));z-index:20;display:flex;align-items:center;justify-content:center;min-height:46px;padding:12px 20px;border-radius:30px;background:var(--gold);color:var(--bg);font-size:12px;box-shadow:0 6px 30px #0005}
+#dovocci-site .service .service-subnote{color:var(--gold);font-size:9px;letter-spacing:1px}
+#dovocci-site .studio-cta{margin-top:25px}
+#dovocci-site .footer-contact{font-size:11px;color:var(--gold)}
+/* Photography for all specialist service cards; preserves the full source image. */
+#dovocci-site .specialist-photo{position:relative;margin:0 0 22px;background:var(--panel)}
+#dovocci-site .specialist-photo img{display:block;width:100%;height:320px;object-fit:contain}
+#dovocci-site .specialist-photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:#111d;font-size:9px;color:var(--paper);letter-spacing:.3px}
+@keyframes dovocci-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:1024px){
+#dovocci-site .logo img,#dovocci-site .footer-top .logo img{width:220px}
+#dovocci-site nav{gap:16px}
+#dovocci-site nav a{font-size:10px}
+#dovocci-site nav .button{padding:14px}
+#dovocci-site .services,#dovocci-site .specialist-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#dovocci-site .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+#dovocci-site .simple-photo{height:480px}
+#dovocci-site .footer-top{flex-wrap:wrap}
+}
+@media(max-width:700px){
+#dovocci-site header{flex-wrap:wrap;gap:8px 15px;min-height:90px;padding-top:15px}
+#dovocci-site .logo img{width:220px;max-width:55vw}
+#dovocci-site .mobile-book{display:inline-block;font-size:11px;color:var(--gold);padding:14px 0;white-space:nowrap}
+#dovocci-site nav{order:3;width:100%;flex-wrap:wrap;gap:0 18px;padding-bottom:12px}
+#dovocci-site nav a{font-size:11px;padding:10px 0}
+#dovocci-site nav .button{display:none}
+#dovocci-site h1{font-size:clamp(46px,12vw,70px)}
+#dovocci-site h2{font-size:clamp(37px,9.2vw,54px)}
+#dovocci-site section{padding:48px 0}
+#dovocci-site .simple-hero{grid-template-columns:1fr;gap:30px;padding:30px 0 40px}
+#dovocci-site .simple-copy p{font-size:12px}
+#dovocci-site .simple-photo{height:clamp(360px,115vw,500px)}
+#dovocci-site .actions{gap:20px;margin-top:24px}
+#dovocci-site .ticker{justify-content:center;font-size:8px;letter-spacing:.7px}
+#dovocci-site .ticker b{display:none}
+#dovocci-site .section-top{display:block}
+#dovocci-site .section-top>p{margin-top:22px}
+#dovocci-site .section-top>.button{margin-top:25px}
+#dovocci-site .services,#dovocci-site .specialist-grid,#dovocci-site .studio,#dovocci-site .inquiry-grid{grid-template-columns:1fr}
+#dovocci-site .services{gap:30px}
+#dovocci-site .service .imagebox img{height:clamp(330px,110vw,470px)}
+#dovocci-site .specialist-grid{gap:30px}
+#dovocci-site .specialist-grid article{border-bottom:1px solid var(--line);padding-bottom:25px}
+#dovocci-site .css-carousel{--card-width:78vw;--duration:290s}
+#dovocci-site .reviews-carousel{--card-width:82vw;--duration:55s}
+#dovocci-site .work img{height:clamp(330px,110vw,460px)}
+#dovocci-site .studio{gap:35px}
+#dovocci-site .studio-enlarge img{height:290px}
+#dovocci-site .studio-thumbnails{gap:5px}
+#dovocci-site .studio-thumbnails img{height:55px}
+#dovocci-site .features{gap:0 15px}
+#dovocci-site .features div{font-size:10px}
+#dovocci-site .inquiry-grid{gap:35px}
+#dovocci-site .footer-top{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+#dovocci-site .motion-track{animation:none}
+#dovocci-site .carousel-window{overflow-x:auto}
+#dovocci-site .motion-group[aria-hidden="true"],#dovocci-site .motion-toggle,#dovocci-site .motion-label{display:none}
+}
